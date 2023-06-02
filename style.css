@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.attribution {
+    margin-top: 5%;
+}
+
+.container {
+    display: flex;
+
+}
+
+.image {
+    width: 400px;
+    border-radius: 10px 0 0 10px;
+}
+
+.content {
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 5%;
+    padding-bottom: 2%;
+    background-color: white;
+    width: 400px;
+    height: 600px;
+}
+
+.additional-text {
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat';
+    font-weight: 700px;
+}
+
+.title {
+    font-family: 'Fraunces';
+    font-weight: 700px;
+    font-size: 2.5rem;
+    max-width: 250px;
+    color: hsl(212, 21%, 14%);
+}
+
+.text {
+    color: hsl(228, 12%, 48%);
+    font-weight: 500px;
+    font-size: 20px;
+    max-width: 65%;
+}
+
+.realPrice {
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces';
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.oldPrice {
+    color: hsl(228, 12%, 48%);
+    font-family: 'Fraunces';
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-left: 2%;
+    text-decoration: line-through;
+}
+
+.button {
+    margin-left: 1%;
+    width: 300px;
+    padding: 5%;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    border-radius: 8px;
+    transition: box-shadow 0.1s ease-in-out;
+}
+
+button:hover {
+    transition: ease-in-out 1s;
+    background-color: hsl(158, 36%, 29%);
+    cursor: pointer;
+}
+
+button:active {
+    box-shadow: inset 0 0 10px white;
+}
+
+
+@media screen and (max-width: 375px) {
+
+
+
+    .container {
+        margin-top: 20%;
+        flex-direction: column;
+        align-items: center;
+        width: 500px;
+    }
+
+    .image {
+        content: url('./images/image-product-mobile.jpg');
+        width: 350px;
+        border-radius: 10px 10px 0 0;
+    }
+
+
+
+    .additional-text {
+        font-size: 0.8rem;
+    }
+
+    .content {
+        width: 350px;
+        height: 400px;
+        padding-left: 3%;
+        border-radius: 0 0 10px 10px;
+        justify-content: start;
+    }
+
+    .content span,
+    h1,
+    p {
+        margin-bottom: 4%;
+    }
+
+    .content span {
+        padding-top: 3%;
+    }
+
+    .button {
+        width: 320px;
+        margin-top: 5%;
+    }
+
+    .text {
+        max-width: 97%;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .title {
+        font-weight: 700px;
+        font-size: 2rem;
+        max-width: 100%;
+    }
+
+    .attribution{
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        max-width: 1440px;
+    }
+}
